@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Detail Menu - Kemangi Catering</title>
+  <title>Ayam Bakar - Kemangi Catering</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root { --kemangi-purple:#7C5786; }
@@ -14,7 +14,7 @@
 <!-- HEADER -->
 <header class="sticky top-0 bg-white border-b z-40">
   <div class="max-w-md mx-auto flex items-center gap-3 p-4">
-    <a href="index.html" class="text-[color:var(--kemangi-purple)] font-semibold">←</a>
+    <a href="/" class="text-[color:var(--kemangi-purple)] font-semibold">←</a>
     <h1 class="text-sm font-semibold">Detail Menu</h1>
   </div>
 </header>
@@ -96,7 +96,7 @@ current=i;
 }
 window.prevSlide=()=>showSlide((current-1+slides.length)%slides.length);
 window.nextSlide=()=>showSlide((current+1)%slides.length);
-setInterval(()=>nextSlide(),6000);
+setInterval(()=>nextSlide(),20000);
 
 gallery.addEventListener('touchstart',e=>startX=e.touches[0].clientX);
 gallery.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-startX;if(dx>50)prevSlide();if(dx<-50)nextSlide();});
