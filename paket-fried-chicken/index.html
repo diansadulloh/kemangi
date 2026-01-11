@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paket Fried Chicken - Kemangi Catering</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --kemangi-purple:#7C5786; }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-800">
+
+<!-- HEADER -->
+<header class="sticky top-0 bg-white border-b z-40">
+  <div class="max-w-md mx-auto flex items-center gap-3 p-4">
+    <a href="/" class="text-[color:var(--kemangi-purple)] font-semibold">←</a>
+    <h1 class="text-sm font-semibold">Detail Menu</h1>
+  </div>
+</header>
+
+<!-- GALLERY -->
+<div class="relative max-w-md mx-auto overflow-hidden" id="gallery">
+  <div class="relative">
+    <img src="/images/ayam-bakar-1.jpg" class="slide w-full aspect-[4/3] object-cover" loading="lazy" onclick="openLightbox(0)">
+    <img src="/images/jajan-2.jpg" class="slide w-full aspect-[4/3] object-cover hidden" loading="lazy" onclick="openLightbox(1)">
+  </div>
+
+  <!-- Badge -->
+  <span class="absolute top-3 left-3 bg-[color:var(--kemangi-purple)] text-white text-xs px-3 py-1 rounded-full shadow">🔥 Ekonomis</span>
+
+  <!-- Arrows -->
+  <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-9 h-9 rounded-full">‹</button>
+  <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-9 h-9 rounded-full">›</button>
+
+  <!-- Dots -->
+  <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+    <span class="dot w-2 h-2 rounded-full bg-white"></span>
+    <span class="dot w-2 h-2 rounded-full bg-white/50"></span>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="max-w-md mx-auto p-4">
+  <h2 class="text-xl font-bold">Paket Fried Chicken</h2>
+  <p class="text-sm text-neutral-500 mt-1">Fried chicken renyah & gurih</p>
+
+  <div class="mt-4">
+    <h3 class="text-sm font-semibold mb-2">Isi Paket</h3>
+    <ul class="text-sm space-y-1">
+      <li>🍗 Fried chicken</li>
+      <li>🍚 Nasi putih</li>
+      <li>🥬 Lalapan</li>
+      <li>🌶️ Sambal pedas</li>
+      <li>🧂 Krupuk renyah</li>
+    </ul>
+  </div>
+
+  <div class="mt-5">
+    <p class="text-sm text-neutral-500">Harga</p>
+    <p class="text-2xl font-bold text-[color:var(--kemangi-purple)]">Rp10.000</p>
+  </div>
+
+  <!-- SHARE -->
+  <div class="mt-6">
+    <p class="text-sm font-semibold mb-2">Bagikan Menu</p>
+    <div class="flex gap-3">
+      <a href="https://wa.me/?text=Paket%20Fried%20Chicken%20Kemangi" class="flex-1 text-center border border-green-600 text-green-600 py-3 rounded-xl text-sm font-semibold">💬 WhatsApp</a>
+      <button onclick="copyLink()" class="flex-1 text-center border border-pink-500 text-pink-500 py-3 rounded-xl text-sm font-semibold">📸 Instagram</button>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center" onclick="closeLightbox()">
+  <img id="lightbox-img" class="max-w-full max-h-full rounded-xl" />
+</div>
+
+<!-- CTA -->
+<a href="https://wa.me/6281327746081" class="fixed bottom-4 left-1/2 -translate-x-1/2 max-w-md w-[90%] bg-[color:var(--kemangi-purple)] text-white py-4 rounded-2xl shadow-lg text-center font-semibold">💬 Pesan via WhatsApp</a>
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+let current=0,startX=0;
+const slides=document.querySelectorAll('.slide');
+const dots=document.querySelectorAll('.dot');
+const gallery=document.getElementById('gallery');
+
+function showSlide(i){
+slides.forEach((s,idx)=>s.classList.toggle('hidden',idx!==i));
+dots.forEach((d,idx)=>{d.classList.toggle('bg-white',idx===i);d.classList.toggle('bg-white/50',idx!==i);});
+current=i;
+}
+window.prevSlide=()=>showSlide((current-1+slides.length)%slides.length);
+window.nextSlide=()=>showSlide((current+1)%slides.length);
+setInterval(()=>nextSlide(),20000);
+
+gallery.addEventListener('touchstart',e=>startX=e.touches[0].clientX);
+gallery.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-startX;if(dx>50)prevSlide();if(dx<-50)nextSlide();});
+
+window.openLightbox=i=>{document.getElementById('lightbox-img').src=slides[i].src;document.getElementById('lightbox').classList.remove('hidden');}
+window.closeLightbox=()=>document.getElementById('lightbox').classList.add('hidden');
+window.copyLink=()=>{navigator.clipboard.writeText(location.href);alert('Link berhasil disalin');window.open('https://instagram.com','_blank');}
+});
+</script>
+</body>
+</html>
