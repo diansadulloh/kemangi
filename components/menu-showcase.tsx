@@ -3,7 +3,6 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { useEffect } from "react"
 
 const menus = [
   {
@@ -83,11 +82,10 @@ export default function MenuShowcase() {
                 {/* Content section */}
                 <div className="p-3 flex flex-col flex-1">
                   <span className="inline-block text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full mb-3">
-                  {item.category}
+                  {menu.category}
                   </span>
                   <h3 className="font-bold text-sm text-foreground line-clamp-2 mb-1">{menu.name}</h3>
-
-                  <p className="text-xs text-foreground/60 mb-3">{menu.description}</p>
+                  {/* <p className="text-xs text-foreground/60 mb-3">{menu.description}</p> */}
                   <div className="mb-3 flex-1">
                     <span className="text-xl font-bold text-primary">Rp {(menu.price / 1000).toFixed(0)}.000</span>
                   </div>
