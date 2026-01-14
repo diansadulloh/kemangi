@@ -118,6 +118,42 @@ const menuItems = {
     reviews: 156,
     servings: "2-3 orang",
   },
+  "7": {
+    name: "Gado-gado Jakarta",
+    category: "Sayuran",
+    price: 40000,
+    image: "/gado-gado-jakarta-tradisional.jpg",
+    description: "Gado-gado autentik Jakarta dengan saus kacah kental yang gurih, berisi sayuran segar dan krecek.",
+    details: [
+      "Sayuran segar (kubis, beansprout, timun)",
+      "Saus kacang kental dan gurih",
+      "Krecek goreng",
+      "Tahu goreng",
+      "Telur rebus",
+      "Kerupuk",
+    ],
+    rating: 4.6,
+    reviews: 78,
+    servings: "1 orang",
+  },
+  "8": {
+    name: "Perkedel Goreng",
+    category: "Appetizer",
+    price: 25000,
+    image: "/perkedel-goreng-kentang.jpg",
+    description:
+      "Perkedel kentang goreng dengan rasa bawang yang kuat dan tekstur dalam yang lembut, sempurna sebagai pendamping.",
+    details: [
+      "6 buah perkedel goreng",
+      "Kentang pilihan",
+      "Rasa bawang yang kuat",
+      "Tekstur dalam yang lembut",
+      "Sempurna sebagai side dish",
+    ],
+    rating: 4.5,
+    reviews: 156,
+    servings: "2-3 orang",
+  },
 }
 
 export default function MenuDetail() {
