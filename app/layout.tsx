@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Kemangi Catering menyediakan layanan catering berkualitas dengan menu tradisional dan modern. Pesan sekarang melalui WhatsApp untuk acara Anda.",
   generator: "v0.app",
-  metadataBase: new URL("https://kemangi-catering.com"),
+  metadataBase: new URL("https://kemangicatering.vercel.app"),
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: "id_ID",
   },
   alternates: {
-    canonical: "https://kemangi-catering.com",
+    canonical: "https://kemangicatering.vercel.app",
   },
   icons: {
     icon: [
@@ -71,8 +71,8 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Kemangi Catering",
               description: "Layanan catering berkualitas dengan menu tradisional Indonesia",
-              telephone: "+62-812-3456-7890",
-              url: "https://kemangi-catering.com",
+              telephone: "+62 813-2774-6081",
+              url: "https://kemangicatering.vercel.app",
               areaServed: "ID",
             }),
           }}

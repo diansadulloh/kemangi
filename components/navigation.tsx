@@ -23,7 +23,7 @@ export default function Navigation() {
             <a href="/#cta" className="text-foreground hover:text-primary transition">
               Kontak
             </a>
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6281327746081" target="_blank" rel="noopener noreferrer">
               <Button size="sm" className="bg-primary hover:bg-primary/90">
                 <Phone className="w-4 h-4 mr-2" />
                 Hubungi Kami
@@ -47,7 +47,7 @@ export default function Navigation() {
             <a href="/#cta" className="block py-2 text-foreground hover:text-primary">
               Kontak
             </a>
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6281327746081" target="_blank" rel="noopener noreferrer">
               <Button size="sm" className="w-full bg-primary hover:bg-primary/90">
                 Hubungi Kami
               </Button>

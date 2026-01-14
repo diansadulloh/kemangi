@@ -7,7 +7,7 @@ import Link from "next/link"
 const menus = [
   {
     id: 1,
-    name: "Nasi Kuning Ayam Goreng",
+    name: "Paket Ayam Kampung Bakar",
     category: "Paket Standar",
     price: 45000,
     image: "/nasi-kuning-ayam-goreng-indonesia-catering.jpg",
@@ -62,7 +62,7 @@ export default function MenuShowcase() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Menu Kami</h2>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            Pilihan menu berkualitas tinggi dengan bahan-bahan segar dan resep tradisional
+            Menu berkualitas tinggi dengan bahan-bahan segar
           </p>
         </div>
 
@@ -84,7 +84,6 @@ export default function MenuShowcase() {
                   <h3 className="font-bold text-sm text-foreground line-clamp-2 mb-1">{menu.name}</h3>
 
                   <p className="text-xs text-foreground/60 mb-3">{menu.description}</p>
-
                   <div className="mb-3 flex-1">
                     <span className="text-xl font-bold text-primary">Rp {(menu.price / 1000).toFixed(0)}.000</span>
                   </div>
