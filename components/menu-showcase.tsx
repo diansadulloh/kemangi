@@ -66,14 +66,11 @@ export default function MenuShowcase() {
           </p>
         </div>
 
-        <div id="favorite" className="text-center">
-          <a
-            href="#favorite"
-          >
+        <div id="favorite" className="text-left">
+          <a href="#favorite">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold"
-            >
+              className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold  h-10">
               Menu Favorite
             </Button>
           </a>
