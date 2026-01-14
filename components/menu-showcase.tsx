@@ -80,10 +80,10 @@ export default function MenuShowcase() {
                 </div>
 
                 {/* Content section */}
-                <span className="inline-block text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full mb-3">
-                {item.category}
-                </span>
                 <div className="p-3 flex flex-col flex-1">
+                  <span className="inline-block text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full mb-3">
+                  {item.category}
+                  </span>
                   <h3 className="font-bold text-sm text-foreground line-clamp-2 mb-1">{menu.name}</h3>
 
                   <p className="text-xs text-foreground/60 mb-3">{menu.description}</p>
