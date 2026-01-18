@@ -70,6 +70,14 @@ const menus = [
     image: "/perkedel-goreng-kentang.jpg",
     description: "Nasi Punar",
   },
+  {
+    id: 9,
+    name: "Paket Fried Chicken",
+    category: "Paket Ekonomis",
+    price: 10000,
+    image: "/perkedel-goreng-kentang.jpg",
+    description: "Fried Chicken",
+  },
 ]
 
 export default function MenuShowcase() {
