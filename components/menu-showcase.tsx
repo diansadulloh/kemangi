@@ -12,7 +12,7 @@ const menus = [
     name: "Nasi Ayam Kampung Bakar",
     category: "Paket Reguler",
     price: 25000,
-    image: "/nasi-ayam-kampung-bakar.jpg",
+    image: "/ayam-bakar.webp",
     description: "Ayam Kampung Bakar",
   },
   {
