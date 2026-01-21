@@ -30,7 +30,8 @@ export default function CTA() {
 
           <div className="text-sm text-foreground/60">
             <p>Jam operasional: Senin - Minggu, 09:00 - 21:00</p>
-            <p>Respon cepat dalam 15 menit</p>
+            <p>Respon cepat dalam 15 menit</p><br>
+			<p>Profesional Catering Pasir - Mijen - Demak</p>
           </div>
         </div>
       </div>
