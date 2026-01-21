@@ -12,7 +12,7 @@ const menuItems = {
     name: "Nasi Ayam Kampung Bakar",
     category: "Paket Reguler",
     price: 25000,
-    image: "/nasi-kuning-ayam-goreng-indonesia-catering.jpg",
+    image: "/ayam-bakar.webp",
     description:
       "Paket Nasi Ayam Kampung Bakar: nasi hangat dengan ayam kampung bakar berbumbu khas, dipanggang hingga harum dan gurih, disajikan bersama sambal dan lalapan segar.",
     details: [
@@ -27,10 +27,10 @@ const menuItems = {
     servings: "1 orang",
   },
   "2": {
-    name: "Soto Ayam Premium",
+    name: "Nasi Semur Ayam",
     category: "Paket Reguler",
-    price: 50000,
-    image: "/soto-ayam-premium-indonesia.jpg",
+    price: 20000,
+    image: "/semur-ayam.webp",
     description:
       "Kuah soto tradisional dengan daging ayam pilihan yang empuk, dibumbui dengan rempah asli yang menghangatkan.",
     details: [
@@ -46,10 +46,10 @@ const menuItems = {
     servings: "1 orang",
   },
   "3": {
-    name: "Rendang Daging Padang",
-    category: "Paket Premium",
-    price: 65000,
-    image: "/rendang-daging-padang-indonesia.jpg",
+    name: "Nasi Daging Rendang",
+    category: "Paket Reguler",
+    price: 25000,
+    image: "/daging-rendang.webp",
     description:
       "Rendang daging sapi asli Padang yang empuk dengan kuah santan kental dan rempah pilihan, meraih berbagai penghargaan.",
     details: [
@@ -65,10 +65,10 @@ const menuItems = {
     servings: "1 orang",
   },
   "4": {
-    name: "Lumpia Goreng Spesial",
-    category: "Appetizer",
-    price: 35000,
-    image: "/lumpia-goreng-spesial.jpg",
+    name: "Nasi Fried Chicken",
+    category: "Paket Reguler",
+    price: 10000,
+    image: "/fried-chicken.webp",
     description:
       "Lumpia goreng gurih dengan isi daging dan sayuran pilihan, tekstur kulit yang renyah dan isi yang lezat.",
     details: [
@@ -83,10 +83,10 @@ const menuItems = {
     servings: "2-3 orang",
   },
   "5": {
-    name: "Gado-gado Jakarta",
+    name: "Nasi Ayam Bakar",
     category: "Sayuran",
-    price: 40000,
-    image: "/gado-gado-jakarta-tradisional.jpg",
+    price: 12000,
+    image: "/ayam-bakar.webp",
     description: "Gado-gado autentik Jakarta dengan saus kacah kental yang gurih, berisi sayuran segar dan krecek.",
     details: [
       "Sayuran segar (kubis, beansprout, timun)",
@@ -101,10 +101,10 @@ const menuItems = {
     servings: "1 orang",
   },
   "6": {
-    name: "Perkedel Goreng",
+    name: "Nasi Ayam Goreng",
     category: "Appetizer",
-    price: 25000,
-    image: "/perkedel-goreng-kentang.jpg",
+    price: 10000,
+    image: "/ayam-goreng.webp",
     description:
       "Perkedel kentang goreng dengan rasa bawang yang kuat dan tekstur dalam yang lembut, sempurna sebagai pendamping.",
     details: [
@@ -119,10 +119,10 @@ const menuItems = {
     servings: "2-3 orang",
   },
   "7": {
-    name: "Gado-gado Jakarta",
-    category: "Sayuran",
-    price: 40000,
-    image: "/gado-gado-jakarta-tradisional.jpg",
+    name: "Nasi Ayam Kampung Bakar",
+    category: "Paket Premium",
+    price: 30000,
+    image: "/ayam-bakar.webp",
     description: "Gado-gado autentik Jakarta dengan saus kacah kental yang gurih, berisi sayuran segar dan krecek.",
     details: [
       "Sayuran segar (kubis, beansprout, timun)",
@@ -137,10 +137,118 @@ const menuItems = {
     servings: "1 orang",
   },
   "8": {
-    name: "Perkedel Goreng",
-    category: "Appetizer",
+    name: "Nasi Semur Ayam",
+    category: "Paket Premium",
     price: 25000,
-    image: "/perkedel-goreng-kentang.jpg",
+    image: "/semur-ayam.webp",
+    description:
+      "Perkedel kentang goreng dengan rasa bawang yang kuat dan tekstur dalam yang lembut, sempurna sebagai pendamping.",
+    details: [
+      "6 buah perkedel goreng",
+      "Kentang pilihan",
+      "Rasa bawang yang kuat",
+      "Tekstur dalam yang lembut",
+      "Sempurna sebagai side dish",
+    ],
+    rating: 4.5,
+    reviews: 156,
+    servings: "2-3 orang",
+  },
+  "9": {
+    name: "Nasi Ayam Goreng",
+    category: "Paket Premium",
+    price: 25000,
+    image: "/ayam-goreng.webp",
+    description:
+      "Perkedel kentang goreng dengan rasa bawang yang kuat dan tekstur dalam yang lembut, sempurna sebagai pendamping.",
+    details: [
+      "6 buah perkedel goreng",
+      "Kentang pilihan",
+      "Rasa bawang yang kuat",
+      "Tekstur dalam yang lembut",
+      "Sempurna sebagai side dish",
+    ],
+    rating: 4.5,
+    reviews: 156,
+    servings: "2-3 orang",
+  },
+  "10": {
+    name: "Nasi Daging Rendang",
+    category: "Paket Premium",
+    price: 30000,
+    image: "/daging-rendang.webp",
+    description:
+      "Perkedel kentang goreng dengan rasa bawang yang kuat dan tekstur dalam yang lembut, sempurna sebagai pendamping.",
+    details: [
+      "6 buah perkedel goreng",
+      "Kentang pilihan",
+      "Rasa bawang yang kuat",
+      "Tekstur dalam yang lembut",
+      "Sempurna sebagai side dish",
+    ],
+    rating: 4.5,
+    reviews: 156,
+    servings: "2-3 orang",
+  },
+  "11": {
+    name: "Nasi Daging Rendang",
+    category: "Paket Premium",
+    price: 32000,
+    image: "/semur-ayam.webp",
+    description:
+      "Perkedel kentang goreng dengan rasa bawang yang kuat dan tekstur dalam yang lembut, sempurna sebagai pendamping.",
+    details: [
+      "6 buah perkedel goreng",
+      "Kentang pilihan",
+      "Rasa bawang yang kuat",
+      "Tekstur dalam yang lembut",
+      "Sempurna sebagai side dish",
+    ],
+    rating: 4.5,
+    reviews: 156,
+    servings: "2-3 orang",
+  },
+  "12": {
+    name: "Nasi Daging Rendang",
+    category: "Paket Premium",
+    price: 34000,
+    image: "/daging-rendang.webp",
+    description:
+      "Perkedel kentang goreng dengan rasa bawang yang kuat dan tekstur dalam yang lembut, sempurna sebagai pendamping.",
+    details: [
+      "6 buah perkedel goreng",
+      "Kentang pilihan",
+      "Rasa bawang yang kuat",
+      "Tekstur dalam yang lembut",
+      "Sempurna sebagai side dish",
+    ],
+    rating: 4.5,
+    reviews: 156,
+    servings: "2-3 orang",
+  },
+  "13": {
+    name: "Nasi Punar",
+    category: "Paket Spesial",
+    price: 35000,
+    image: "/nasi-punar.webp",
+    description:
+      "Perkedel kentang goreng dengan rasa bawang yang kuat dan tekstur dalam yang lembut, sempurna sebagai pendamping.",
+    details: [
+      "6 buah perkedel goreng",
+      "Kentang pilihan",
+      "Rasa bawang yang kuat",
+      "Tekstur dalam yang lembut",
+      "Sempurna sebagai side dish",
+    ],
+    rating: 4.5,
+    reviews: 156,
+    servings: "2-3 orang",
+  },
+  "14": {
+    name: "Ingkung Ayam",
+    category: "Paket Spesial",
+    price: 0,
+    image: "/ingkung-ayam.webp",
     description:
       "Perkedel kentang goreng dengan rasa bawang yang kuat dan tekstur dalam yang lembut, sempurna sebagai pendamping.",
     details: [

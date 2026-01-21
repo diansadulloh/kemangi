@@ -7,13 +7,13 @@ import "./globals.css"
 
 const urbanist = Urbanist({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // bisa pilih sesuai kebutuhan
+  weight: ["400", "500", "600", "700"],
 })
 
 export const metadata: Metadata = {
-  title: "Kemangi Catering - Layanan Catering Terbaik Indonesia",
+  title: "Kemangi Catering - Layanan Catering Terbaik di Demak",
   description:
-    "Kemangi Catering menyediakan layanan catering berkualitas dengan menu tradisional dan modern. Pesan sekarang melalui WhatsApp untuk acara Anda.",
+    "Kemangi Catering menyediakan layanan catering berkualitas dengan menu tradisional dan modern. Pesan sekarang melalui WhatsApp untuk acara Anda. Katering Pasir - Mijen - Demak",
   generator: "v0.app",
   metadataBase: new URL("https://kemangicatering.vercel.app"),
   manifest: "/manifest.json",
