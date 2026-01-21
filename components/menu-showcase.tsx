@@ -20,7 +20,7 @@ const menus = [
     name: "Nasi Semur Ayam",
     category: "Paket Reguler",
     price: 20000,
-    image: "/nasi-semur-ayam.jpg",
+    image: "/semur-ayam.webp",
     description: "Semur Ayam",
   },
   {
@@ -28,7 +28,7 @@ const menus = [
     name: "Nasi Daging Rendang",
     category: "Paket Reguler",
     price: 25000,
-    image: "/nasi-daging-rendang.jpg",
+    image: "/daging-rendang.webp",
     description: "Daging berkualitas tinggi",
   },
   {
@@ -36,7 +36,7 @@ const menus = [
     name: "Nasi Fried Chicken",
     category: "Paket Reguler",
     price: 10000,
-    image: "/nasi-fried-chicken.jpg",
+    image: "/fried-chicken.webp",
     description: "Fried Chicken",
   },
   {
@@ -44,7 +44,7 @@ const menus = [
     name: "Nasi Ayam Bakar",
     category: "Paket Reguler",
     price: 12000,
-    image: "/nasi-ayam-bakar.jpg",
+    image: "/ayam-bakar.webp",
     description: "Ayam Bakar",
   },
   {
@@ -52,7 +52,7 @@ const menus = [
     name: "Nasi Ayam Goreng",
     category: "Paket Reguler",
     price: 10000,
-    image: "/nasi-ayam-goreng.jpg",
+    image: "/ayam-goreng.webp",
     description: "Ayam Goreng",
   },
   {
@@ -60,7 +60,7 @@ const menus = [
     name: "Nasi Ayam Kampung Bakar",
     category: "Paket Premium",
     price: 30000,
-    image: "/nasi-ayam-kampung-bakar.jpg",
+    image: "/ayam-bakar.webp",
     description: "Ayam Kampung Bakar",
   },
   {
@@ -68,7 +68,7 @@ const menus = [
     name: "Nasi Semur Ayam",
     category: "Paket Premium",
     price: 25000,
-    image: "/nasi-semur-ayam.jpg",
+    image: "/semur-ayam.webp",
     description: "Semur Ayam",
   },
   {
@@ -76,7 +76,7 @@ const menus = [
     name: "Nasi Ayam Goreng",
     category: "Paket Premium",
     price: 25000,
-    image: "/nasi-ayam-goreng.jpg",
+    image: "/ayam-goreng.webp",
     description: "Ayam Goreng",
   },
   {
@@ -84,7 +84,7 @@ const menus = [
     name: "Nasi Daging Rendang",
     category: "Paket Premium",
     price: 30000,
-    image: "/perkedel-goreng-kentang.jpg",
+    image: "/daging-rendang.webp",
     description: "Nasi Daging Rendang",
   },
   {
@@ -92,7 +92,7 @@ const menus = [
     name: "Nasi Daging Rendang",
     category: "Paket Premium",
     price: 32000,
-    image: "/perkedel-goreng-kentang.jpg",
+    image: "/daging-rendang.webp",
     description: "Nasi Daging Rendang",
   },
   {
@@ -100,7 +100,7 @@ const menus = [
     name: "Nasi Daging Rendang",
     category: "Paket Premium",
     price: 34000,
-    image: "/perkedel-goreng-kentang.jpg",
+    image: "/daging-rendang.webp",
     description: "Nasi Daging Rendang",
   },
   {
@@ -108,7 +108,7 @@ const menus = [
     name: "Nasi Punar",
     category: "Paket Spesial",
     price: 35000,
-    image: "/nasi-punar.jpg",
+    image: "/nasi-punar.webp",
     description: "Nasi Punar",
   },
   {
@@ -116,7 +116,7 @@ const menus = [
     name: "Ingkung Ayam",
     category: "Paket Spesial",
     price: 0,
-    image: "/ingkung-ayam.jpg",
+    image: "/ingkung-ayam.webp",
     description: "Ingkung Ayam",
   },
 ]
