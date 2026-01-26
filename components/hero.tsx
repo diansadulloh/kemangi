@@ -28,7 +28,7 @@ export default function Hero() {
             alt="Kemangi Catering Logo"
             width={80}
             height={80}
-            className="w-28 h-28 md:w-60 md:h-60"
+            className="w-32 h-32 md:w-60 md:h-60"
           />
         </div>
 

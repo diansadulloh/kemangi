@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Kemangi Catering menyediakan layanan catering berkualitas dengan menu tradisional dan modern. Pesan sekarang melalui WhatsApp untuk acara Anda. Katering Pasir - Mijen - Demak",
   generator: "v0.app",
-  metadataBase: new URL("https://kemangicatering.vercel.app"),
+  metadataBase: new URL("https://kemangi.my.id"),
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: "id_ID",
   },
   alternates: {
-    canonical: "https://kemangicatering.vercel.app",
+    canonical: "https://kemangi.my.id",
   },
   icons: {
     icon: [
@@ -51,7 +51,7 @@ export const viewport = {
   userScalable: true,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#faf6f1" },
-    { media: "(prefers-color-scheme: dark)", color: "#1a1410" },
+    { media: "(prefers-color-scheme: dark)", color: "#faf6f1" },
   ],
 }
 
@@ -72,7 +72,7 @@ export default function RootLayout({
               name: "Kemangi Catering",
               description: "Layanan catering berkualitas dengan menu tradisional Indonesia",
               telephone: "+62 813-2774-6081",
-              url: "https://kemangicatering.vercel.app",
+              url: "https://kemangi.my.id",
               areaServed: "ID",
             }),
           }}
