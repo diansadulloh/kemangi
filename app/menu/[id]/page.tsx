@@ -356,6 +356,23 @@ export default function MenuDetail() {
           </div>
 
           <div className="mb-8">
+		  
+          <a
+            href="https://wa.me/6281327746081?text=Halo%20Kemangi%20Catering%2C%20saya%20ingin%20memesan%20catering"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto"
+          >
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full border-white text-white hover:bg-white/10 rounded-lg font-semibold bg-transparent"
+            >
+              <MessageCircle className="w-5 h-5 mr-2" />
+              Pesan via WhatsApp
+            </Button>
+          </a>		  
+		  
             <h2 className="text-xl font-bold text-foreground mb-4">Ulasan Pelanggan</h2>
             <Card className="p-6 bg-card border-border mb-4">
               <div className="flex items-start gap-3 mb-3">
